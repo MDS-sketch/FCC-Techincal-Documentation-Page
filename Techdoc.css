@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body
+    {
+
+        background-color:rgb(0, 0, 0);
+        color: white;
+        font-family: 'Roboto', Courier, monospace;
+        min-width: 290px;
+        line-height: 1.5;
+        text-align: justify;
+     
+    }
+
+#navbar
+    {
+        background-color: rgb(105, 105, 105);
+        min-width: 290px;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+    }
+
+#navbar li
+{
+    list-style: none;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+.nav-link
+{
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul 
+{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  
+#navbar a 
+{
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar header
+{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar
+{
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(36, 36, 36, 0);
+  }
+   
+  #navbar ul::-webkit-scrollbar-track-piece
+  {
+      background-color:rgb(105, 105, 105);
+  }
+ #navbar ul::-webkit-scrollbar-thumb
+ {
+    border-top: 2px solid rgb(31, 31, 31);
+    border-bottom: 2px solid rgb(20, 20, 20);
+    background-color:rgb(153, 153, 153)
+ }
+
+ body::-webkit-scrollbar-thumb {
+    background-color: rgb(48, 48, 48);
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+  }
+body::-webkit-scrollbar-track-piece
+{
+    background-color:rgb(27, 27, 27);
+}
+
+main
+{
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px 5px 0 305px;
+    overflow: hidden;
+  
+    
+}
+
+main header
+{
+  
+    -webkit-border-radius: 2px; 
+    border-radius: 2px; 
+    background: #272626;
+    -webkit-box-shadow: 11px 11px 22px #1f1e1e,
+    -11px -11px 22px #2f2e2e;
+    box-shadow: 11px 11px 20px #1f1e1e,
+    -11px -11px 20px #2b2a2a;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 0px;
+    padding-left: 5px;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+   
+}
+
+#main-doc a
+{
+    color: rgb(223, 226, 23);
+}
+
+#main-doc article
+{
+    margin: 5px 15px 0 15px;
+}
+
+#main-doc article li
+{
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#main-doc code
+{
+    position: relative;
+    display: block;
+    -webkit-border-radius: 2px; 
+    border-radius: 2px; 
+    background: #272626;
+    -webkit-box-shadow: 11px 11px 22px #1f1e1e,
+    -11px -11px 22px #2f2e2e;
+    box-shadow: 11px 11px 22px #1f1e1e,
+    -11px -11px 22px #252525;
+    width: 80%;
+    font-weight: bold;
+    white-space: pre-line;
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    padding: 10px 0 10px 15px;
+    margin:10px 10px;
+    border-radius: 5px;
+    
+}
+.footer-logo
+{
+    color: white;
+}
+/*Mobile phones*/
+@media (max-width:767px)
+{
+    body 
+    {
+        height: 100%;
+    }
+    #navbar ul {
+        border-left: 1px solid;
+        height: 207px;
+        font-size: 14px;
+        
+      }
+    
+      #navbar {
+        background-color: rgb(105, 105, 105);
+        position: absolute;
+        width: 100% ;
+        margin:0;
+        max-height: 290px;
+        z-index: 1;
+       
+      }
+    
+      main {
+        position: relative;
+        top: 0;
+        margin: 300px auto 1000px;
+        font-size: 16px;
+        height: auto;
+      }
+    
+        #main-doc code
+        {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    
+}
